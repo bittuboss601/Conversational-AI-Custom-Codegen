@@ -1,0 +1,24 @@
+<script>
+  !(function () {
+    let e = document.createElement("script"),
+      t = document.head || document.getElementsByTagName("head")[0];
+    (e.src = "https://cdn.jsdelivr.net/npm/rasa-webchat@1.0.1/lib/index.js"),
+      (e.async = !0),
+      (e.onload = () => {
+        window.WebChat.default({
+          selector: "#webchat",
+          initPayload: "/greet",
+          customData: { language: "en" },
+          socketUrl: "http://localhost:5005",
+          socketPath: "/socket.io/",
+          title: "Conversational AI",
+          subtitle: "Ask me anything!",
+          profileAvatar: "https://cdn.pixabay.com/photo/2023/10/21/00/36/ai-8330457_1280.jpg",
+          inputTextFieldHint: "Type your message...",
+          showFullScreenButton: true,
+        });
+      }),
+      t.insertBefore(e, t.firstChild);
+  })();
+</script>
+<div id="webchat"></div>

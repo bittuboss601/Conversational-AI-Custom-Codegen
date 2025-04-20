@@ -1,0 +1,28 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-error",
+      "2": "I-error",
+      "3": "L-error",
+      "4": "U-error",
+      "5": "B-language",
+      "6": "I-language",
+      "7": "L-language",
+      "8": "U-language",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-error": 1,
+      "I-error": 2,
+      "L-error": 3,
+      "U-error": 4,
+      "B-language": 5,
+      "I-language": 6,
+      "L-language": 7,
+      "U-language": 8,
+      "O": 0
+    },
+    "num_tags": 9
+  }
+]
